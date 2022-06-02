@@ -42,7 +42,7 @@
 }
 //исправил проблему нижнего маржина в 30px на desktope
 .team__card:nth-last-child(-n + 4) {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
