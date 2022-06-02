@@ -1,13 +1,13 @@
-// .page-header-style {
-//     display: flex;
-//     align-items: center;
-// }
+.page-header-style {
+    display: flex;
+    align-items: center;
+}
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.page-header-style {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-  }
-}
+// .page-header-style {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
