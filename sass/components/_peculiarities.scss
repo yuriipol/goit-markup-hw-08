@@ -9,6 +9,9 @@
 }
 .peculiarities__item {
   width: 450px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 354px;
@@ -16,7 +19,6 @@
   }
   @media screen and (min-width: $desktop) {
     width: 270px;
-    // margin: 0;
   }
 }
 
@@ -25,6 +27,18 @@
     margin-right: 0;
   }
 }
+.peculiarities__item:nth-last-child(-n + 2) {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+//исправил проблему нижнего маржина в 30px на desktope
+.peculiarities__item:nth-last-child(-n + 4) {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .peculiarities__item:not(:last-child) {
   @media screen and (min-width: $desktop) {
     margin-right: 30px;
@@ -65,7 +79,6 @@
   margin: 0;
   line-height: 1.71;
   color: $title-text-color;
-  margin-bottom: 30px;
 }
 
 // .peculiarities {

@@ -35,10 +35,17 @@ body {
 .section-title {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .conteiner {
@@ -334,6 +341,10 @@ body {
   width: 450px;
 }
 
+.peculiarities__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .peculiarities__item {
     width: 354px;
@@ -350,6 +361,18 @@ body {
 @media screen and (min-width: 768px) {
   .peculiarities__item:nth-child(2n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .peculiarities__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .peculiarities__item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
   }
 }
 
@@ -395,7 +418,6 @@ body {
   margin: 0;
   line-height: 1.71;
   color: #757575;
-  margin-bottom: 30px;
 }
 
 .section-works {
@@ -437,6 +459,163 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+}
+
+.team {
+  background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list-card {
+    display: flex;
+  }
+}
+
+.team__card {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__card {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__image {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .team__image {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__image {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__card-disc {
+  padding: 30px;
+}
+
+.team__user-name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__user-name-discription {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.team__list-network {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.team__list-network--list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team__network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__link-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__icon-network {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__link-network:hover .team__icon-network,
+.team__link-network:focus .team__icon-network {
+  fill: #ffffff;
+}
+
+.team__link-network:hover:hover, .team__link-network:hover:focus,
+.team__link-network:focus:hover,
+.team__link-network:focus:focus {
+  background-color: #2196f3;
 }
 
 .section-clients {
