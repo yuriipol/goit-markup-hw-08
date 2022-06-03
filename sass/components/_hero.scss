@@ -9,8 +9,8 @@
   }
 }
 .hero__overlay {
-  width: 480px;
-  height: 400px;
+  width: 100%;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -20,20 +20,23 @@
   background-size: cover;
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
-    height: 400px;
+    max-width: 768px;
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    width: 100%;
   }
 }
 .hero__title {
   margin-top: 0;
-  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  max-width: 360px;
+  width: 100%;
+
   color: $primary-white-color;
   font-weight: 900;
   font-size: 26px;
@@ -42,7 +45,8 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $desktop) {
-    width: 696px;
+    max-width: 696px;
+    width: 100%;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -51,7 +55,7 @@
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
+
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.06em;
