@@ -1,17 +1,21 @@
 .filtr {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: center;
+  @media screen and (min-width: $tablet) {
     margin-bottom: 50px;
-    /* outline: 2px solid tomato; */
-    display: flex;
     justify-content: center;
-    align-content: center;
+  }
 }
 
 .filtr__item {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .filtr__item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
