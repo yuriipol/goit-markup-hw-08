@@ -9,15 +9,16 @@
   }
 }
 .team__list-card {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
+  // @media screen and (min-width: $tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   justify-content: center;
+  // }
 }
 
 .team__card {
@@ -26,41 +27,49 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
-
-  max-width: 450px;
-  width: 100%;
-
-  @media screen and (min-width: $desktop) {
-    max-width: 270px;
-  }
+  // margin-bottom: 30px;
+  margin: 15px;
 
   @media screen and (min-width: $tablet) {
-    max-width: 354px;
-    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
-}
-.team__card:nth-child(2n) {
-  @media screen and (min-width: $tablet) {
-    margin-right: 0;
-  }
-}
-.team__card:nth-last-child(-n + 2) {
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-}
-//исправил проблему нижнего маржина в 30px на desktope
-.team__card:nth-last-child(-n + 4) {
   @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
+    flex-basis: calc((100% - 120px) / 4);
   }
-}
 
-.team__card:not(:last-child) {
-  @media screen and (min-width: $desktop) {
-    margin-right: 30px;
-  }
+  // max-width: 450px;
+  // width: 100%;
+
+  //   @media screen and (min-width: $desktop) {
+  //     max-width: 270px;
+  //   }
+
+  //   @media screen and (min-width: $tablet) {
+  //     max-width: 354px;
+  //     margin-right: 30px;
+  //   }
+  // }
+  // .team__card:nth-child(2n) {
+  //   @media screen and (min-width: $tablet) {
+  //     margin-right: 0;
+  //   }
+  // }
+  // .team__card:nth-last-child(-n + 2) {
+  //   @media screen and (min-width: $tablet) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+  // //исправил проблему нижнего маржина в 30px на desktope
+  // .team__card:nth-last-child(-n + 4) {
+  //   @media screen and (min-width: $desktop) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  // .team__card:not(:last-child) {
+  //   @media screen and (min-width: $desktop) {
+  //     margin-right: 30px;
+  //   }
 }
 .team__image {
   display: inline-block;
@@ -71,12 +80,6 @@
   // @media screen and (min-width: $desktop) {
   //   width: 270px;
   // }
-}
-
-.team__card:not(:last-child) {
-  @media screen and (min-width: $desktop) {
-    margin-right: 30px;
-  }
 }
 
 .team__card-disc {
