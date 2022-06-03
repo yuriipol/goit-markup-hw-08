@@ -1,50 +1,73 @@
 .conteiner--social-icons {
+  @media screen and (min-width: $tablet) {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   flex-direction: column;
+  //   align-content: center;
+  //   justify-content: center;
+  //   align-items: center;
+  //   align-items: baseline;
 }
-
+.social-links {
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
+}
 .social-links-list {
-    display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .social-links-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    /* outline: 1px solid tomato; */
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  /* outline: 1px solid tomato; */
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-list__items:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-links__title,
 .footer-subscribe__title {
-    margin: 0;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 .social-links-list__icon {
-    width: 20px;
-    height: 20px;
-    fill: $primary-white-color;
+  width: 20px;
+  height: 20px;
+  fill: $primary-white-color;
 }
 
 .social-links-list__link {
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-    }
-    
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }

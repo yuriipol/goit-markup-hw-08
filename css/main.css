@@ -621,7 +621,14 @@ body {
 }
 
 .footer__logo-address {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo-address {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -665,13 +672,34 @@ body {
   color: #2196f3;
 }
 
-.conteiner--social-icons {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .conteiner--social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.social-links {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    margin-left: 70px;
+  }
 }
 
 .social-links-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-links-list__link {
@@ -696,12 +724,20 @@ body {
 .footer-subscribe__title {
   margin: 0;
   margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links__title,
+  .footer-subscribe__title {
+    text-align: left;
+  }
 }
 
 .social-links-list__icon {
@@ -714,20 +750,39 @@ body {
   background-color: #2196f3;
 }
 
-.footer-subscribe {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    flex-grow: 1;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-left: auto;
+    max-width: 570px;
+  }
 }
 
 .footer-subscribe-form {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .footer-subscribe-form__input {
-  width: 358px;
-  height: 50px;
+  width: 100%;
   padding: 15px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   font: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -772,6 +827,12 @@ body {
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-button {
+    margin-left: 12px;
+  }
 }
 
 .subscribe-button__icon-send {
