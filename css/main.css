@@ -1021,11 +1021,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: 450px;
   padding: 40px;
   background-color: #fff;
   border-radius: 4px;
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__button-close {
@@ -1182,21 +1188,33 @@ body {
   align-items: center;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   cursor: pointer;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-modal__link-terms {
+    font-size: 14px;
+  }
+}
+
 .form-modal__terms {
   text-decoration: none;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-modal__terms {
+    font-size: 14px;
+  }
 }
 
 .form-modal__checkbox:focus + .form-modal__fake {
