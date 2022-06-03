@@ -1,45 +1,119 @@
 .clients {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
-
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 210px;
+  width: 100%;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $tablet) {
+    max-width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 170px;
+  }
+}
+.clients__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: $mobile) {
+  .clients__item {
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .clients__icon {
-    width: 106px;
-    height: 60px;
-    fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link {
-
-    &:hover .clients__icon,
-    &:focus .clients__icon {
-        fill: $accent-color;
-    }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: $accent-color;
+  }
 }
 
 .clients__link {
-
-    &:hover,
-    &:focus {
-        border-color: $accent-color;
-    }
-
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
+
+// .clients {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .clients__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .clients__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .clients__icon {
+//     width: 106px;
+//     height: 60px;
+//     fill: #afb1b8;
+
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .clients__link {
+
+//     &:hover .clients__icon,
+//     &:focus .clients__icon {
+//         fill: $accent-color;
+//     }
+// }
+
+// .clients__link {
+
+//     &:hover,
+//     &:focus {
+//         border-color: $accent-color;
+//     }
+
+// }
