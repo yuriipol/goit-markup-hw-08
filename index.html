@@ -28,18 +28,34 @@
           <a href="./index.html" class="logo logo__position"
             ><span class="logo__web">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="site-nav__button-menu"
+            aria-expanded="false"
+            aria-controls="menu-conteiner"
+            data-menu-button
+          >
+            <svg width="40" hight="40" area-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-menu-button"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-button"></use>
+            </svg>
+          </button>
 
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link site-nav__link--current">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link link">Контакты</a>
-            </li>
-          </ul>
+          <div class="menu-conteiner" id="menu-conteiner" data-menu>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link link site-nav__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <ul class="contacts list">
@@ -502,5 +518,6 @@
       </div>
     </div>
     <script src="./js/model.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

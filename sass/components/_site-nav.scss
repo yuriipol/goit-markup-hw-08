@@ -1,49 +1,84 @@
 .site-nav {
-    display: flex;
+  display: flex;
 }
+//Делаем кнопку меню в хедере
+.site-nav__button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.site-nav__button-menu .icon-cross {
+  display: none;
+}
+.site-nav__button-menu.is-open .icon-cross {
+  display: block;
+}
+.site-nav__button-menu.is-open .icon-menu {
+  display: none;
+}
+.menu-conteiner {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+
+  background-color: aqua;
+  padding: 10px;
+  &.is-open {
+    display: block;
+  }
+}
+//конец
 
 .site-nav__item:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .site-nav__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $primary-text-color;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav__link--current {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .site-nav__link--current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 4px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
 
-    border-radius: 4px;
-    background-color: $accent-color;
+  border-radius: 4px;
+  background-color: $accent-color;
 }
 
 .site-nav__link {
-    
-    &:hover {
-        color: $accent-color;
-    }
-    &:focus {
-        color: $accent-color;
-    }
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
 }
