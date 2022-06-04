@@ -386,14 +386,20 @@ body {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-works {
+    display: none;
+  }
+}
+
 .section-works {
   display: none;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-works {
-    display: block;
+    padding-bottom: 90px;
   }
 }
 

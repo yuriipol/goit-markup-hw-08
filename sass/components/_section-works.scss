@@ -1,7 +1,12 @@
 .section-works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.section-works {
   display: none;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
   @media screen and (min-width: $desktop) {
-    display: block;
+    padding-bottom: 90px;
   }
 }
