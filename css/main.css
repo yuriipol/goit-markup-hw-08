@@ -925,6 +925,12 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .work-list-pages {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-list-pages {
     margin: -15px;
@@ -936,6 +942,10 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.work-list-pages__item {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -971,6 +981,7 @@ body {
 
 .work-list-pages__images {
   display: block;
+  width: 100%;
   /* margin-bottom: 20px; */
 }
 

@@ -1,6 +1,9 @@
 .work-list-pages {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
   @media screen and (min-width: $tablet) {
     margin: -15px;
   }
@@ -13,6 +16,7 @@
   border-left: 1px solid #eeeeee;
 }
 .work-list-pages__item {
+  width: 100%;
   @media screen and (min-width: $tablet) {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
@@ -62,6 +66,7 @@
 
 .work-list-pages__images {
   display: block;
+  width: 100%;
   /* margin-bottom: 20px; */
 }
 .work-list-pages__work-title {
