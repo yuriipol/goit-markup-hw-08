@@ -400,12 +400,18 @@ body {
   color: #757575;
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .contacts__mail {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -874,7 +880,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__logo-address {
     margin-bottom: 60px;
   }
@@ -911,7 +917,7 @@ body {
 
 .adress__mail,
 .adress__tel {
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.71;
   transition-property: color;
@@ -1203,6 +1209,12 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .work-list-pages__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-list-pages__item {
     margin: 15px;
@@ -1317,6 +1329,7 @@ body {
 
 .modal {
   position: absolute;
+  z-index: 300;
   width: 100%;
   max-width: 450px;
   padding: 40px;

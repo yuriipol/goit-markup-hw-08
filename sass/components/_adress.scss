@@ -1,39 +1,37 @@
-
 .adress__mail {
-    display: inline-block;
+  display: inline-block;
 }
 
 .adress__item:not(:last-child) {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .adress__link {
-    color: $primary-white-color;
-    text-decoration: none;
-    line-height: 1.71;
+  color: $primary-white-color;
+  text-decoration: none;
+  line-height: 1.71;
 }
 
 .adress__mail,
 .adress__tel {
-    color: $title-text-color;
-    text-decoration: none;
-    line-height: 1.71;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 1.71;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress__mail {
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .adress__tel {
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

@@ -17,6 +17,9 @@
 }
 .work-list-pages__item {
   width: 100%;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: $tablet) {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
