@@ -4,8 +4,10 @@
   background-color: #2f303a;
 }
 .footer__logo-address {
-  margin-bottom: 60px;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $desktop) {
     text-align: left;
   }
