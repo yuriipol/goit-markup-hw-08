@@ -137,6 +137,8 @@ body {
 }
 
 .site-nav__button-menu {
+  position: relative;
+  z-index: 200;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +194,7 @@ body {
     padding: 48px 40px;
     z-index: 100;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     max-width: 480px;
