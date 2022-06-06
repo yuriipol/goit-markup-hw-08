@@ -1,14 +1,18 @@
 .site-nav {
   display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 //Делаем кнопку меню в хедере
+
 .site-nav__button-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   margin: 0;
   padding: 0;
@@ -16,6 +20,10 @@
   height: 40px;
 
   margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 .site-nav__button-menu .icon-cross {
   display: none;
@@ -27,29 +35,43 @@
   display: none;
 }
 .menu-conteiner {
-  display: none;
-  z-index: 100;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  padding: 48px;
-
   background-color: #fff;
-  padding: 48px 40px;
   &.is-open {
     display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    padding: 48px 40px;
+    z-index: 100;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
   }
 }
 //конец
 
 .site-nav__item:not(:last-child) {
-  padding-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
   //   margin-right: 50px;
 }
 //Социальные сети в мобильном меню
+.mobmenu-soc-links {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
 .mobile-menu-sicial-links {
   display: flex;
   align-items: center;
@@ -70,6 +92,21 @@
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 //конец
+.site-nav__button-menu {
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    fill: $accent-color;
+  }
+}
+.site-nav__button-menu {
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: $accent-color;
+  }
+}
+//Ховерим иконки бургера и закрыть
+
+//конец
 .site-nav__link {
   position: relative;
   display: block;
@@ -84,6 +121,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
 }
 
 .site-nav__link--current {
