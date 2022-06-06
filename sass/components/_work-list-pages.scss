@@ -99,7 +99,7 @@
 
   /* width: 322px; */
   padding: 63px 24px;
-  /* height: 100%; */
+  height: 100%;
 
   opacity: 0;
   /* text-align: center; */
@@ -112,6 +112,10 @@
 
   color: $primary-white-color;
   background: rgba(33, 150, 243, 0.9);
+
+  @media screen and (max-width: 375px) {
+    font-size: 14px;
+  }
 }
 .work-list-pages__link {
   &:hover .work-list-pages__work-link-discription,
