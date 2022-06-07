@@ -78,6 +78,16 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.star {
+  margin-left: 0;
+  @media screen and (min-width: $tablet) {
+    // margin-left: 20px;
+  }
 }
 
 .work-list-pages__work-dicript {
