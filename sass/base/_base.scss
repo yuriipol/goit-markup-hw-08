@@ -1,16 +1,12 @@
 body {
-    margin: 0;
-    background-color: $primary-white-color;
-    color: $primary-text-color;
-    font-family: $font-family-roboto;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  margin: 0;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $font-family-roboto;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 
-    // @media (min-width: 800px){
-    //     background-color: orange;
-    // }
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
-// @media (min-width: 800px) {
-//     body {background-color: orange;}
-// }
-    

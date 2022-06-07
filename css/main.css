@@ -8,6 +8,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -193,11 +197,11 @@ body {
     display: none;
     padding: 48px 40px;
     z-index: 100;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    max-width: 480px;
+    height: 100%;
   }
 }
 
@@ -496,12 +500,13 @@ body {
 
 .hero__overlay {
   width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img-hero480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img-hero480.jpg");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -531,13 +536,6 @@ body {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img-hero3200@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__overlay {
-    max-width: 1600px;
-    width: 100%;
   }
 }
 
@@ -1328,6 +1326,7 @@ body {
 
 .backdrop {
   position: fixed;
+  z-index: 300;
   top: 0;
   left: 0;
   width: 100%;
@@ -1357,7 +1356,6 @@ body {
 
 .modal {
   position: absolute;
-  z-index: 300;
   width: 100%;
   max-width: 450px;
   padding: 40px;
