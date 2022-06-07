@@ -1312,9 +1312,23 @@ body.no-scroll {
   background: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (max-width: 449px) {
+  .work-list-pages__work-link-discription {
+    padding: 40px 20px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .work-list-pages__work-link-discription {
     font-size: 14px;
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .work-list-pages__work-link-discription {
+    font-size: 14px;
+    padding: 25px 15px;
   }
 }
 

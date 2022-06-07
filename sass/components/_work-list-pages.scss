@@ -112,9 +112,17 @@
 
   color: $primary-white-color;
   background: rgba(33, 150, 243, 0.9);
+  @media screen and (max-width: 449px) {
+    padding: 40px 20px;
+  }
 
   @media screen and (max-width: 375px) {
     font-size: 14px;
+    padding: 40px 20px;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 14px;
+    padding: 25px 15px;
   }
 }
 .work-list-pages__link {
