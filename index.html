@@ -200,13 +200,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list-card list">
             <li class="team__card">
-              <img
-                class="team__image"
-                srcset="./images/img.jpg 450w, ./images/img@2x.jpg 900w"
-                src="./images/img.jpg"
-                alt="Игорь Демьяненко"
-                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="./images/img270.jpg 1x, ./images/img540@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/img354.jpg 1x, ./images/img708@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img class="team__image" src="./images/img.jpg" alt="Игорь Демьяненко" />
+              </picture>
+
               <div class="team__card-disc">
                 <h3 class="team__user-name">Игорь Демьяненко</h3>
                 <p class="team__user-name-discription">Product Designer</p>
