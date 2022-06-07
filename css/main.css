@@ -189,7 +189,9 @@ body.no-scroll {
 }
 
 .menu-conteiner.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -307,13 +309,6 @@ body.no-scroll {
 .contacts {
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (max-width: 479px) {
-  .contacts {
-    margin-top: 202px;
-    margin-bottom: 44px;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1232,8 +1227,20 @@ body.no-scroll {
   border-left: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list-pages__item-discript {
+    height: 147px;
+  }
+}
+
 .work-list-pages__item {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list-pages__item {
+    height: 445px;
+  }
 }
 
 @media screen and (max-width: 767px) {
