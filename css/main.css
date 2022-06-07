@@ -1233,14 +1233,14 @@ body.no-scroll {
   border-left: 1px solid #eeeeee;
 }
 
-.work-list-pages__item {
-  width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list-pages__item-discript {
+    flex-grow: 1;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .work-list-pages__item {
-    height: 445px;
-  }
+.work-list-pages__item {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1268,6 +1268,14 @@ body.no-scroll {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list-pages__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .work-list-pages__link:hover, .work-list-pages__link:focus {
@@ -1299,7 +1307,6 @@ body.no-scroll {
   .work-list-pages__work-title {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
   }
 }
 
