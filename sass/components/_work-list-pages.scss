@@ -15,7 +15,8 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    height: 147px;
+    // height: 147px;
+    // flex-grow: 1;
   }
 }
 .work-list-pages__item {
@@ -84,9 +85,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  flex-grow: 1;
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
   }
 }
 .star {

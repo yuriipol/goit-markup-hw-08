@@ -96,7 +96,7 @@
 }
 .mobile-menu-sicial-links {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   @media screen and (min-width: $tablet) {
     display: none;
@@ -117,6 +117,9 @@
   text-align: left;
 
   color: #2196f3;
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+  }
 }
 //конец
 
